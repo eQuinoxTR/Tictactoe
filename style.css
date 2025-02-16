@@ -1,0 +1,106 @@
+:root {
+    color: rgb(0, 0, 0);
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --border-value: 0px white solid;
+}
+
+:root, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+
+container > div {
+    font-size: 6rem;
+    border: 3px rgb(58, 71, 82) solid;
+    border-image: linear-gradient(45deg, rgb(27, 27, 27), #aeb3f7) 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+    color: rgba(22, 27, 54, 0.897);
+    transition: 200ms;
+}
+
+div:nth-child(1) {
+    border-left: var(--border-value);
+    border-top: var(--border-value);
+}
+div:nth-child(2) {
+    border-top: var(--border-value);
+}
+div:nth-child(3) {
+    border-top: var(--border-value);
+    border-right: var(--border-value);
+}
+div:nth-child(4) {
+    border-left: var(--border-value);
+}
+div:nth-child(6) {
+    border-right: var(--border-value);
+}
+div:nth-child(7) {
+    border-left: var(--border-value);
+    border-bottom: var(--border-value);
+}
+div:nth-child(8) {
+    border-bottom: var(--border-value);
+}
+div:nth-child(9) {
+    border-right: var(--border-value);
+    border-bottom: var(--border-value);
+}
+
+container > div:active {
+    background-color: rgba(247, 247, 247, 0.726);
+}
+
+
+container {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+body {  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 11%;
+}
+
+header {
+    font-size: 2.5rem;
+    margin-top: 25px;
+}
+
+.flex-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 55px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: bolder;
+    
+}
+.player {
+    font-weight: 500;
+    display: flex;
+    gap: 300px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.flex-inside-player {
+    display: flex;
+    flex-direction: row;
+}
